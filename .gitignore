@@ -1,5 +1,6 @@
 .gsd-keyboard.settings-ported
 cava/
+nvim/
 chromium/
 config.jsonc
 dconf/
