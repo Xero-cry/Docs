@@ -1,0 +1,17 @@
+.gsd-keyboard.settings-ported
+cava/
+chromium/
+config.jsonc
+dconf/
+downlist
+easyeffects/
+evolution/
+font-manager/
+fontconfig/
+go/
+gtk-3.0/
+pavucontrol.ini
+systemd/
+user-dirs.dirs
+user-dirs.locale
+waypaper/
