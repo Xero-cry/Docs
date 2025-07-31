@@ -1,0 +1,56 @@
+[
+  {
+    "layer": "top",
+    "position": "top",
+    "spacing": 2,
+    "output": "HDMI-A-1",
+    "modules-left": [
+      "custom/arch",
+      "hyprland/workspaces",
+      "mpris"
+    ],
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-right": [
+      "pulseaudio",
+      "tray",
+      "custom/swaync",
+      "clock",
+      "hyprland/language"
+    ],
+    "include": [
+      "~/.config/waybar/modules.json"
+    ]
+  },
+  {
+    "layer": "top",
+    "position": "top",
+    "spacing": 2,
+    "output": "DP-1",
+    "modules-left": [
+      "custom/arch",
+      "cpu",
+      "memory",
+      "disk",
+      "temperature",
+      "power-profiles-daemon",
+      "custom/cava_mviz",
+      "mpris",
+      "idle_inhibitor"
+    ],
+    "modules-center": [
+      "network#speed",
+      "network#ip"
+    ],
+    "modules-right": [
+      "hyprland/workspaces",
+      "pulseaudio",
+      "clock"
+    ],
+    "include": [
+      "~/.config/waybar/modules.json"
+    ]
+  }
+]
+

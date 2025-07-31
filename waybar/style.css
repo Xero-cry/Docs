@@ -1,0 +1,223 @@
+@import "mocha.css";
+
+* {
+    font-family: "Hack Nerd Font", "otf-font-awesome";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#waybar {
+    background: rgba(30, 30, 46, 0.25); /* Añade fondo visible */
+    padding-top: 5px;
+    padding-bottom:5px;
+    color: #f53852;
+    border-radius: 7rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #66b5cb;
+    min-height: 19px;
+}
+
+#waybar.empty #window {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* Estilos generales para módulos */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#bluetooth,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#language,
+#mpd {
+    background-color: transparent;
+    padding: 0 10px;
+    border-radius: 7rem;
+}
+
+/* Hover */
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#bluetooth:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#power-profiles-daemon:hover,
+#language:hover,
+#mpd:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+/* Workspaces */
+#workspaces {
+    border-radius: 6rem;
+    background-color: transparent;
+}
+
+#workspaces button {
+    color: #66b5cb;
+    border-radius: 7rem;
+}
+
+#workspaces button.active {
+    font-size: 19px;
+    padding: 2px 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0;
+    color: @brown;
+/*    background-color: #f53852;
+ */    
+}
+
+#workspaces button:hover {
+    color: @brown;
+    background-color: @maroon;
+}
+
+/* Custom modules */
+#custom-arch {
+    margin-left: 5px;
+    padding: 0 10px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 7rem;
+}
+#custom-arch:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#custom-search {
+    padding: 0 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 7rem;
+}
+#custom-search:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#custom-swaync {
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 7rem;
+}
+#custom-swaync:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#custom-power {
+    margin-right: 5px;
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 7rem;
+}
+#custom-power:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+/* Window title */
+#window {
+    border-radius: 7rem;
+    padding: 0 10px;
+    background-color: transparent;
+    color: #f53852;
+    margin: 0 5px;
+}
+#window:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+/* Sliders */
+#pulseaudio-slider slider,
+#backlight-slider slider {
+    min-width: 0;
+    min-height: 0;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough,
+#backlight-slider trough {
+    min-width: 80px;
+    min-height: 5px;
+    border-radius: 5px;
+}
+
+#pulseaudio-slider highlight,
+#backlight-slider highlight {
+    min-height: 10px;
+    border-radius: 5px;
+}
+
+/* MPRIS */
+#mpris {
+    border-radius: 7rem;
+    background-color: transparent;
+    padding: 0 10px;
+}
+#mpris:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#custom-cava_mviz {
+    color: #00D228;
+    font-weight: normal;
+}
+
+/* Opcional: Taskbar (comentado por ahora)
+#taskbar button {
+    border-radius: 7rem;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @teal;
+    margin: 0 2px;
+    padding: 0 8px;
+    color: @text;
+}
+#taskbar button.active {
+    background-color: @surface0;
+}
+*/
+#network.ip {
+    color: #00D228;
+}
+
+#network.speed {
+    color: #cce400;
+    min-width: 100px;
+}
