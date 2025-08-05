@@ -4,7 +4,7 @@
     "multithreading": true
   },
     "logo": {
-        "source": "~/Downloads/Courage_Screaming.webp",
+        "source": "~/.config/fastfetch/Courage_Screaming.webp",
         "type": "kitty",
         "height": 22,
         "width": 45,
